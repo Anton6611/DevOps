@@ -12,7 +12,7 @@ services:
     networks:
       - backend-network
     volumes:
-      - container-data:/app
+      - ../backend/data.txt:/app/data.txt
 
   frontend:
     build:
